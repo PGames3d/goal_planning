@@ -20,23 +20,23 @@ class NavigationService {
     }
   }
 
-  static Future<T?> kiaPush<T>(BuildContext context, PageRouteInfo<dynamic> location) async {
+  static Future<T?> goalPush<T>(BuildContext context, PageRouteInfo<dynamic> location) async {
     return _router?.push<T?>(location);
   }
 
-  static void kiaGo(BuildContext context, PageRouteInfo<dynamic> location) {
+  static void goalGo(BuildContext context, PageRouteInfo<dynamic> location) {
     _router?.navigate(location);
   }
 
-  static Future<T?> kiaPushNamed<T>(BuildContext context, String name) async {
+  static Future<T?> goalPushNamed<T>(BuildContext context, String name) async {
     return _router?.pushNamed<T?>(name);
   }
 
-  static void kiaReplace(BuildContext context, PageRouteInfo<dynamic> location) {
+  static void goalReplace(BuildContext context, PageRouteInfo<dynamic> location) {
     _router?.replace(location);
   }
 
-  static void kiaReplaceNamed(BuildContext context, String name) {
+  static void goalReplaceNamed(BuildContext context, String name) {
     _router?.replaceNamed(name);
   }
 
@@ -50,12 +50,12 @@ class NavigationService {
         return _router?.maybePop();
       }
     } else {
-      kiaPushNamed(context, AppRoutes.loginPath);
+      goalPushNamed(context, AppRoutes.homePath);
       return null;
     }
   }
 
-  static void kiaReplaceAll(BuildContext context, PageRouteInfo<dynamic> location) {
+  static void goalReplaceAll(BuildContext context, PageRouteInfo<dynamic> location) {
     _router?.replaceAll([location]);
   }
 }

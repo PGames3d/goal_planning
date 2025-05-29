@@ -1,11 +1,11 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:kias/core/data/services/theme_service.dart';
 
 import '../../../application/app_theme.dart';
 import '../../../gen/colors.gen.dart';
 import '../../data/services/locator.dart';
+import '../../data/services/theme_service.dart';
 import '../../repository/secured_local_repository.dart';
 
 part 'theme_event.dart';
@@ -28,10 +28,10 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
     late ThemeData themeData;
     switch (theme) {
       case AppThemeEnum.light:
-        themeData = AppTheme.kiaLightTheme;
+        themeData = AppTheme.goalLightTheme;
         break;
       case AppThemeEnum.dark:
-        themeData = AppTheme.kiaDarkTheme;
+        themeData = AppTheme.goalDarkTheme;
         break;
       case AppThemeEnum.custom:
         int seedColor = await ThemeService().getSeedColor();
@@ -44,7 +44,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
         );
         break;
       default :
-        themeData = AppTheme.kiaLightTheme;
+        themeData = AppTheme.goalLightTheme;
     }
     emit(ThemeLoaded(themeData));
   }

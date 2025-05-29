@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:kias/core/utils/is_null_or_empty.dart';
+import 'package:goal_planning/core/utils/is_null_or_empty.dart';
 
 class KeyboardDismisser extends StatelessWidget {
   const KeyboardDismisser({

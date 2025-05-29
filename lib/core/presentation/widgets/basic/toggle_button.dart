@@ -1,11 +1,11 @@
-import 'package:kias/gen/colors.gen.dart';
+import '../../../../gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 
-class KiaToggleButton extends StatelessWidget {
+class GoalToggleButton extends StatelessWidget {
   ValueChanged<bool>? onChanged;
   bool? colorValue;
 
-  KiaToggleButton({super.key, this.onChanged, this.colorValue = false});
+  GoalToggleButton({super.key, this.onChanged, this.colorValue = false});
 
   @override
   Widget build(BuildContext context) {

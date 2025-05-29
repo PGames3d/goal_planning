@@ -1,11 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
-import 'package:kias/core/utils/common_utils.dart';
 
 import '../../data/services/locator.dart';
 import '../../repository/secured_local_repository.dart';
 import '../constants/app_constants.dart';
-import '../constants/app_keys.dart';
 import '../constants/app_strings.dart';
 
 class AppInterceptors extends QueuedInterceptor {
@@ -18,44 +15,21 @@ class AppInterceptors extends QueuedInterceptor {
         'On Request: Method:${options.method}\nPath:${options.uri.path}?${options.uri.query}\nBody:${options.data}\nTimeout:${options.receiveTimeout}'
     );
 
-    // 🔌 Check for internet connection before proceeding
-    var connectivityResult = await InternetConnection().hasInternetAccess;
-    if (!connectivityResult) {
-      return handler.reject(
-        NoInternetConnectionException(options),
-        true,
-      );
-    }
+
 
     options.headers['Content-Type'] = 'application/json';
 
     final repository = locator<SecuredLocalRepository>();
     // Fetch both values concurrently
     final results = await Future.wait([
-      repository.getString(AppConstants.distributorCode),
       repository.getString(AppConstants.deviceToken),
-      CommonUtils.getDeviceDetails(),
-      CommonUtils.getUuid(),
     ]);
 
-    final distributorCode = results[0];
-    final deviceToken = results[1];
-    final deviceDetails = results[2];
-    final deviceId = results[3];
+    final deviceToken = results[0];
 
-    if (distributorCode != null) {
-      options.headers["distributorCode"] = distributorCode;
-    }
+
     if (deviceToken != null) {
       options.headers["Authorization"] = "Bearer $deviceToken";
-    }
-
-    if(deviceDetails !=null){
-      options.headers["deviceDetails"] = deviceDetails.toString();
-    }
-
-    if(deviceId !=null){
-      options.headers["deviceId"] = deviceId;
     }
 
     logger.i(options.headers);

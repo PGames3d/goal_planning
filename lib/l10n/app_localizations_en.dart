@@ -558,10 +558,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get continueWithEmail => 'Continue with email';
 
   @override
-  String get welcomeToKia => 'Welcome To Kia';
+  String get welcomeToGoal => 'Welcome To Goal';
 
   @override
-  String get appName => 'Kia';
+  String get appName => 'Goal';
 
   @override
   String get defaultThemeMessage => 'Default theme set successfully!';

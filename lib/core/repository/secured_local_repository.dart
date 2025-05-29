@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:kias/core/utils/is_null_or_empty.dart';
+import 'package:goal_planning/core/utils/is_null_or_empty.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import 'local_repository.dart';

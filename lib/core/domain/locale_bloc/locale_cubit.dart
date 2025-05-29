@@ -6,9 +6,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kias/core/data/services/locator.dart';
-import 'package:kias/core/repository/secured_local_repository.dart';
 
+import '../../data/services/locator.dart';
+import '../../repository/secured_local_repository.dart';
 import '../../utils/constants/app_constants.dart';
 
 class LocaleCubit extends Cubit<Locale> {

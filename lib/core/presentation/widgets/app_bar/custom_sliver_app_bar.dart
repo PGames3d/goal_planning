@@ -1,13 +1,14 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:kias/core/presentation/widgets/basic/kia_svg.dart';
-import 'package:kias/core/utils/constants/constants.dart';
+
 
 import '../../../../gen/assets.gen.dart';
 import '../../../../gen/colors.gen.dart';
 import '../../../data/services/navigation_service.dart';
-import '../basic/kia_text.dart';
+import '../../../utils/constants/ui_helpers.dart';
+import '../basic/goal_svg.dart';
+import '../basic/goal_text.dart';
 
 // Custom AppBar widget
 class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -68,7 +69,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
         borderRadius: const BorderRadius.all(Radius.circular(30)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: kiaSvg(context, path: Assets.icons.hamburger,
+          child: goalSvg(context, path: Assets.icons.hamburger,
               boxFit: BoxFit.fitWidth
           ),
         ),
@@ -78,7 +79,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(
-            child: KiaText(
+            child: GoalText(
               title,
               style: titleStyle ?? Theme.of(context).textTheme.titleSmall, // Custom text style
             ),
@@ -99,7 +100,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.past),
+                child: goalSvg(context, path: Assets.icons.past),
               ),
             ),
           ),],
@@ -116,7 +117,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.outstandingBill),
+                child: goalSvg(context, path: Assets.icons.outstandingBill),
               ),
             ),
           ),],
@@ -133,7 +134,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.pastAllocationsInfo),
+                child: goalSvg(context, path: Assets.icons.pastAllocationsInfo),
               ),
             ),
           ),],
@@ -151,7 +152,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.pastAllocations),
+                child: goalSvg(context, path: Assets.icons.pastAllocations),
               ),
             ),
           ),],
@@ -169,7 +170,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.location,),
+                child: goalSvg(context, path: Assets.icons.location,),
               ),
             ),
           ),],
@@ -188,7 +189,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.recent,),
+                child: goalSvg(context, path: Assets.icons.recent,),
               ),
             ),
           ),],
@@ -220,7 +221,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
                 exportLedgerAction?.call();
               },
               borderRadius: const BorderRadius.all(Radius.circular(30)),
-              child: kiaSvg(context, path: Assets.icons.ledger),
+              child: goalSvg(context, path: Assets.icons.ledger),
             ),
           ),],
 
@@ -237,7 +238,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.excel,isWithoutFilter: true),
+                child: goalSvg(context, path: Assets.icons.excel,isWithoutFilter: true),
               ),
             ),
           ),],
@@ -254,7 +255,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.pdf,isWithoutFilter: true),
+                child: goalSvg(context, path: Assets.icons.pdf,isWithoutFilter: true),
               ),
             ),
           ),],

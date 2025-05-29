@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'kia_text.dart';
+import 'goal_text.dart';
 
-class KiaExpansionList extends StatefulWidget {
+class GoalExpansionList extends StatefulWidget {
   final String title;
   final Widget body;
   bool? isExpanded;
   final Widget? subTitle;
 
-  KiaExpansionList(
+  GoalExpansionList(
       {super.key,
       this.subTitle,
       required this.title,
@@ -16,10 +16,10 @@ class KiaExpansionList extends StatefulWidget {
       this.isExpanded});
 
   @override
-  State<KiaExpansionList> createState() => _KiaExpansionListState();
+  State<GoalExpansionList> createState() => _GoalExpansionListState();
 }
 
-class _KiaExpansionListState extends State<KiaExpansionList> {
+class _GoalExpansionListState extends State<GoalExpansionList> {
   bool _isExpanded = false;
 
   @override
@@ -37,7 +37,7 @@ class _KiaExpansionListState extends State<KiaExpansionList> {
               title: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  KiaText(
+                  GoalText(
                     widget.title,
                     style: Theme.of(context)
                         .textTheme

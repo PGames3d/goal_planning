@@ -1193,16 +1193,16 @@ abstract class AppLocalizations {
   /// **'Continue with email'**
   String get continueWithEmail;
 
-  /// No description provided for @welcomeToKia.
+  /// No description provided for @welcomeToGoal.
   ///
   /// In en, this message translates to:
-  /// **'Welcome To Kia'**
-  String get welcomeToKia;
+  /// **'Welcome To Goal'**
+  String get welcomeToGoal;
 
   /// No description provided for @appName.
   ///
   /// In en, this message translates to:
-  /// **'Kia'**
+  /// **'Goal'**
   String get appName;
 
   /// No description provided for @defaultThemeMessage.

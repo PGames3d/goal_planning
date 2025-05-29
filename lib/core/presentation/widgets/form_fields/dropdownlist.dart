@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../gen/colors.gen.dart';
-import '../basic/kia_text.dart';
+import '../basic/goal_text.dart';
 
 class CustomDropdown extends StatefulWidget {
   final List<String> items;
@@ -34,7 +34,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        KiaText(
+        GoalText(
           widget.label,
           style: Theme.of(context)
               .textTheme
@@ -61,7 +61,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
               items: widget.items.map((String item) {
                 return DropdownMenuItem<String>(
                   value: item,
-                  child: KiaText(
+                  child: GoalText(
                     item,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
@@ -123,7 +123,7 @@ class _FilterDropdownState extends State<FilterDropdown> {
                 items: widget.items.map((String item) {
                   return DropdownMenuItem<String>(
                     value: item,
-                    child: KiaText(
+                    child: GoalText(
                       item,
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
@@ -160,7 +160,7 @@ class _FilterDropdownState extends State<FilterDropdown> {
           },
           child:
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            KiaText(
+            GoalText(
               DateFormat('dd-MM-yyyy').format(_selectedDate.toLocal()),
               style: Theme.of(context).textTheme.bodyMedium,
             ),

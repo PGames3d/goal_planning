@@ -1,13 +1,13 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:kias/core/presentation/widgets/basic/kia_svg.dart';
-import 'package:kias/core/utils/constants/constants.dart';
 
 import '../../../../gen/assets.gen.dart';
 import '../../../../gen/colors.gen.dart';
 import '../../../data/services/navigation_service.dart';
-import '../basic/kia_text.dart';
+import '../../../utils/constants/ui_helpers.dart';
+import '../basic/goal_svg.dart';
+import '../basic/goal_text.dart';
 
 // Custom AppBar widget
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -48,7 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         borderRadius: const BorderRadius.all(Radius.circular(30)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: kiaSvg(context, path: Assets.icons.hamburger,
+          child: goalSvg(context, path: Assets.icons.hamburger,
           boxFit: BoxFit.fitWidth
           ),
         ),
@@ -57,7 +57,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          KiaText(
+          GoalText(
             title,
             style: titleStyle ?? Theme.of(context).textTheme.titleSmall, // Custom text style
           ),
@@ -76,7 +76,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               borderRadius: const BorderRadius.all(Radius.circular(30)),
               child: Padding(
                 padding: const EdgeInsets.all(3.0),
-                child: kiaSvg(context, path: Assets.icons.past),
+                child: goalSvg(context, path: Assets.icons.past),
               ),
             ),
           ),],

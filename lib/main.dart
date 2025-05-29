@@ -62,8 +62,8 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
           // TODO: implement listener
         },
         builder: (context, state) {
-          ThemeData selectedTheme = AppTheme.kiaLightTheme;
-          ThemeData darkTheme = AppTheme.kiaDarkTheme;
+          ThemeData selectedTheme = AppTheme.goalLightTheme;
+          ThemeData darkTheme = AppTheme.goalDarkTheme;
           if(state is ThemeLoaded) {
             selectedTheme = state.theme;
             darkTheme =  ThemeData(

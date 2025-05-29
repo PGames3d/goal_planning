@@ -7,7 +7,7 @@ import '../gen/fonts.gen.dart';
 class AppTheme {
   AppTheme._();
 
-  static final ThemeData kiaLightTheme = ThemeData(
+  static final ThemeData goalLightTheme = ThemeData(
       scaffoldBackgroundColor: ColorName.whiteColor,
       brightness: Brightness.light,
       colorScheme: lightColorScheme,
@@ -42,7 +42,7 @@ class AppTheme {
       useMaterial3: true,
       fontFamily: FontFamily.poppins);
 
-  static final ThemeData kiaDarkTheme = ThemeData(
+  static final ThemeData goalDarkTheme = ThemeData(
       brightness: Brightness.dark,
       colorScheme: darkColorScheme,
       dialogBackgroundColor: Colors.black45,
@@ -68,7 +68,7 @@ class AppTheme {
       useMaterial3: true,
       fontFamily: FontFamily.poppins);
 
-  static final ThemeData kiaYellowTheme = ThemeData(
+  static final ThemeData goalYellowTheme = ThemeData(
       scaffoldBackgroundColor: ColorName.whiteColor,
       brightness: Brightness.light,
       colorScheme: lightYellowScheme,

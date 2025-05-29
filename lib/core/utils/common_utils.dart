@@ -5,25 +5,19 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:geocoding/geocoding.dart';
-import 'package:geolocator/geolocator.dart';
+
 import 'package:intl/intl.dart';
-import 'package:kias/core/repository/secured_local_repository.dart';
-import 'package:kias/core/utils/constants/app_constants.dart';
+
 import 'package:url_launcher/url_launcher.dart';
-import 'package:uuid/uuid.dart';
 
 import '../../application/app_router.dart';
-import '../../features/login/data/model/login_response_model.dart';
+
 import '../../gen/colors.gen.dart';
 import '../data/services/locator.dart';
 import '../data/services/navigation_service.dart';
-import '../presentation/widgets/basic/kia_text.dart';
+import '../presentation/widgets/basic/goal_text.dart';
 import 'constants/app_strings.dart';
-import 'package:device_info_plus/device_info_plus.dart';
 
-import 'enums/user_type_enums.dart';
-import 'helper/user_data_helper.dart';
 
 class CommonUtils {
   CommonUtils._();
@@ -363,58 +357,9 @@ class CommonUtils {
   }
 
   static void showMessage(BuildContext context,{required String message, int? duration,Color? color,SnackBarAction? action}){
-     ScaffoldMessenger.of(context).showSnackBar(SnackBar(backgroundColor: color,action: action, content: KiaText(message, fontColor:Theme.of(context).brightness == Brightness.dark ? ColorName.blackColor : ColorName.whiteColor,),duration: Duration(seconds: duration ?? 2),));
+     ScaffoldMessenger.of(context).showSnackBar(SnackBar(backgroundColor: color,action: action, content: GoalText(message, fontColor:Theme.of(context).brightness == Brightness.dark ? ColorName.blackColor : ColorName.whiteColor,),duration: Duration(seconds: duration ?? 2),));
   }
 
-  static Future<Position> getLocation() async{
-    Position? lastPosition = await Geolocator.getLastKnownPosition();
-  ///Check last know location time
-    if (lastPosition != null && DateTime.now().difference(lastPosition.timestamp).inMinutes < 10) {
-      return lastPosition;
-    }
-  ///return current location
-    return await Geolocator.getCurrentPosition(locationSettings: const LocationSettings(
-       accuracy: LocationAccuracy.best,
-     ));
-  }
-
-  ///We will get current address and current lat long
- static Future<String> getAddressFromLatLong(Position position) async {
-    try {
-      List<Placemark> placemarks = await placemarkFromCoordinates(
-        position.latitude,
-        position.longitude,
-      );
-
-      if (placemarks.isNotEmpty) {
-        Placemark place = placemarks.first;
-        return "${place.name}, ${place.locality}, ${place.administrativeArea}, ${place.country}";
-      }
-    } catch (e) {
-      logger.e("Geocoding failed: $e");
-    }
-    return "Unknown Location";
-  }
-
-  ///Request location permissions
-  static Future<bool> requestLocationPermission() async {
-    LocationPermission permission = await Geolocator.checkPermission();
-    if (permission == LocationPermission.denied) {
-      permission = await Geolocator.requestPermission();
-      return permission != LocationPermission.denied && permission != LocationPermission.deniedForever;
-    }
-
-    return permission != LocationPermission.deniedForever;
-  }
-
-  static bool isSignificantChange(Position oldPos, Position newPos) {
-    const double minDistance = 100;
-    double distance = Geolocator.distanceBetween(
-        oldPos.latitude, oldPos.longitude,
-        newPos.latitude, newPos.longitude
-    );
-    return distance > minDistance;
-  }
 
   static Future<File?> openCamera(String address) async {
     try {
@@ -467,36 +412,9 @@ class CommonUtils {
     }
   }
 
-  static Future<Map<String, String>> getDeviceDetails() async {
-    final deviceInfoPlugin = DeviceInfoPlugin();
-    final Map<String, String> deviceData = {};
 
-    if (Platform.isAndroid) {
-      final androidInfo = await deviceInfoPlugin.androidInfo;
-      deviceData['device'] = androidInfo.device;               // Device name/identifier
-      deviceData['model'] = androidInfo.model;                 // Model of the device
-      deviceData['manufacturer'] = androidInfo.manufacturer;   // Manufacturer
-      deviceData['os'] = 'Android ${androidInfo.version.release}';
-    } else if (Platform.isIOS) {
-      final iosInfo = await deviceInfoPlugin.iosInfo;
-      deviceData['name'] = iosInfo.name;                       // Device name as set by the user
-      deviceData['model'] = iosInfo.model;                     // Model of the device
-      deviceData['os'] = '${iosInfo.systemName} ${iosInfo.systemVersion}';
-    }
 
-    return deviceData;
-  }
 
-  static Future<String> getUuid() async{
-    var uuid = const Uuid();
-    String storedId = await locator<SecuredLocalRepository>().getString(AppConstants.deviceUuid) ?? "";
-    if(storedId.isEmpty){
-      storedId  = uuid.v4();
-      locator<SecuredLocalRepository>().saveString(AppConstants.deviceUuid, storedId);
-    }
-    logger.i(storedId);
-    return storedId;
-  }
   static double toDouble(dynamic value) {
     if (value is double) {
       return value;
@@ -513,67 +431,6 @@ class CommonUtils {
     if(value == 0) return "-";
     return NumberFormat.decimalPattern().format(value);
   }
-
-
-  static Future<UserData> loadUserData() async {
-    final secureRepo = locator<SecuredLocalRepository>();
-    try {
-      final results = await Future.wait([
-        secureRepo.getInt(AppConstants.userType),
-        secureRepo.getObject(AppConstants.userDetailsPrefKey),
-      ]);
-      final userTypeId = results[0] as int? ?? 0;
-      final loginModel = LoginResponseModel.fromJson(
-          results[1] as Map<String, dynamic>);
-      final userType = UserType.values.firstWhere(
-            (element) => element.userTypeId == userTypeId,
-        orElse: () => UserType.salesman,
-      );
-      return UserData(userType: userType, loginModel: loginModel);
-    }catch(e){
-      secureRepo.clearData();
-      return UserData(userType: UserType.salesman, loginModel: LoginResponseModel(result: null, userDetail: null, routeInfo: [], retailerInfo: [], retailerFlag: null, qrCodePath: "", authToken: ""));
-    }
-  }
-
-
-  static Future<void> logout(BuildContext context) async{
-    final securedRepo = locator<SecuredLocalRepository>();
-
-    // Fetch values concurrently.
-    final results = await Future.wait([
-      securedRepo.getString(AppConstants.distributorCode),
-      securedRepo.getString(AppConstants.distributorName),
-      securedRepo.getString(AppConstants.apiUrl),
-      securedRepo.getString(AppConstants.mobileNumber),
-      securedRepo.getString(AppConstants.password),
-      securedRepo.getBool(AppConstants.rememberMe),
-    ]);
-
-    final String distributorCode = results[0] as String? ?? "";
-    final String distributorName = results[1] as String? ?? "";
-    final String apiUrl = results[2] as String? ?? "";
-    final String mobileNumber = results[3] as String? ?? "";
-    final String password = results[4] as String? ?? "";
-    final bool rememberMe = results[5] as bool? ?? false;
-
-    await securedRepo.clearData();
-    await Future.wait([
-      securedRepo.saveString(AppConstants.distributorCode, distributorCode),
-      securedRepo.saveString(AppConstants.distributorName, distributorName),
-      securedRepo.saveString(AppConstants.apiUrl, apiUrl),
-      securedRepo.saveString(AppConstants.mobileNumber, mobileNumber),
-      securedRepo.saveString(AppConstants.password, password),
-      securedRepo.saveBool(AppConstants.rememberMe, rememberMe),
-    ]);
-
-    if(context.mounted){
-      NavigationService.kiaReplaceAll(context, const LoginScreenRoute());
-    }
-  }
-
-
-
 }
 
 

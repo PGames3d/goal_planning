@@ -558,7 +558,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get continueWithEmail => 'ईमेल के साथ जारी रखें';
 
   @override
-  String get welcomeToKia => 'किया में आपका स्वागत है';
+  String get welcomeToGoal => 'किया में आपका स्वागत है';
 
   @override
   String get appName => 'किया';

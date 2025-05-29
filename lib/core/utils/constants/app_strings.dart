@@ -198,8 +198,8 @@ class AppStrings {
   static const String signIn = "Sign in";
   static const String proceed = "Proceed";
   static const String continueWithEmail = "Continue with email";
-  static const String welcomeToKia = "Welcome To Kia";
-  static const String appName = "Kia";
+  static const String welcomeToGoal = "Welcome To Goal";
+  static const String appName = "Goal";
   static const String defaultThemeMessage = "Default theme set successfully!";
   static const String customDate = "Custom Date";
   static const String defaultTheme = "Default theme";

@@ -2,11 +2,11 @@
 
 import 'dart:ui';
 
-import 'package:kias/core/data/services/locator.dart';
-import 'package:kias/core/repository/secured_local_repository.dart';
-import 'package:kias/core/utils/constants/app_constants.dart';
 
 import '../../../gen/colors.gen.dart';
+import '../../repository/secured_local_repository.dart';
+import '../../utils/constants/app_constants.dart';
+import 'locator.dart';
 
 enum AppThemeEnum { light, dark, custom }
 

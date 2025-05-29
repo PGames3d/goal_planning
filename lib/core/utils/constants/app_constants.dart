@@ -10,23 +10,23 @@ class AppConstants {
   static const int readTimeOut = 30000;
   static const int readTimeOutMax = 45000;
 
-  static const String eulaPrefKey = "kias_eula_";
-  static const String eulaVersionKey = "kias_version";
+  static const String eulaPrefKey = "goals_eula_";
+  static const String eulaVersionKey = "goals_version";
 
-  static const String userDetailsPrefKey = "kias_user_details";
-  static const String kiasLoginUserName = "kias_user_name";
-  static const String kiaUserIdPrefKey = "kias_user_id";
-  static const String sideNavBarKey = "kias_side_nav_bar";
-  static const String kiasEntityIds = "kias_entity_ids";
-  static const String kiasCompaniesEntityIds = "kias_company_entity_ids";
+  static const String userDetailsPrefKey = "goals_user_details";
+  static const String goalsLoginUserName = "goals_user_name";
+  static const String goalUserIdPrefKey = "goals_user_id";
+  static const String sideNavBarKey = "goals_side_nav_bar";
+  static const String goalsEntityIds = "goals_entity_ids";
+  static const String goalsCompaniesEntityIds = "goals_company_entity_ids";
 
   ///user type constants
-  static const String userType = "kias_user_type";
-  static const String userTheme = "kias_user_selected_theme";
-  static const String themePrimary = "kias_theme_primary";
-  static const String allFlags = "kias_all_flags";
-  static const String switches = "kias_switches";
-  static const String basicInfo = "kias_basic_info";
+  static const String userType = "goals_user_type";
+  static const String userTheme = "goals_user_selected_theme";
+  static const String themePrimary = "goals_theme_primary";
+  static const String allFlags = "goals_all_flags";
+  static const String switches = "goals_switches";
+  static const String basicInfo = "goals_basic_info";
   static const int userTypeOwner = 1;
   static const int userTypeSalesman = 2;
   static const int userTypeGodownkeeper = 3;
@@ -69,27 +69,27 @@ class AppConstants {
   static const String ageRangeStart = "00";
   static const String ageRangeEnd = "80";
 
-  static const String deviceToken = 'kias_device_token';
-  static const String deviceUuid = 'kias_device_uuid';
-  static const String isLogin = 'kias_isLogin';
-  static const String apiUrl = 'kias_app_url';
-  static const String distributorCode = 'kias_distributorCode';
-  static const String distributorName = 'kias_distributor_name';
-  static const String isOnboarded = 'kias_isOnboarded';
-  static const String profilePic = 'kias_profilePic';
-  static const String profileSate = 'kias_profileState';
-  static const String isAtPersonal = 'kias_isAtPersonal';
-  static const String isAtEducationFirst = 'kias_isAtEducationFirst';
-  static const String isAtEducationSecond = 'kias_isAtEducationSecond';
-  static const String isAtAbout = 'kias_isAtAbout';
-  static const String isAtCareer = 'kias_isAtCareer';
-  static const String languageCode = 'kias_language_code';
-  static const String securityPasscode = 'kias_security_passcode';
-  static const String isCustomLock = 'kias_is_custom_lock';
-  static const String mobileNumber = 'kias_mobile_number';
-  static const String password = 'kias_password';
-  static const String rememberMe = 'kias_remember_me';
-  static const String signedBillPicture = 'kias_signed_bill_picture';
+  static const String deviceToken = 'goals_device_token';
+  static const String deviceUuid = 'goals_device_uuid';
+  static const String isLogin = 'goals_isLogin';
+  static const String apiUrl = 'goals_app_url';
+  static const String distributorCode = 'goals_distributorCode';
+  static const String distributorName = 'goals_distributor_name';
+  static const String isOnboarded = 'goals_isOnboarded';
+  static const String profilePic = 'goals_profilePic';
+  static const String profileSate = 'goals_profileState';
+  static const String isAtPersonal = 'goals_isAtPersonal';
+  static const String isAtEducationFirst = 'goals_isAtEducationFirst';
+  static const String isAtEducationSecond = 'goals_isAtEducationSecond';
+  static const String isAtAbout = 'goals_isAtAbout';
+  static const String isAtCareer = 'goals_isAtCareer';
+  static const String languageCode = 'goals_language_code';
+  static const String securityPasscode = 'goals_security_passcode';
+  static const String isCustomLock = 'goals_is_custom_lock';
+  static const String mobileNumber = 'goals_mobile_number';
+  static const String password = 'goals_password';
+  static const String rememberMe = 'goals_remember_me';
+  static const String signedBillPicture = 'goals_signed_bill_picture';
 
   static const String fromList = 'List';
   static const String fromNavigation = 'Navigation';
