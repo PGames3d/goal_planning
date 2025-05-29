@@ -22,6 +22,67 @@ class $AssetsColorGen {
 class $AssetsFontsGen {
   const $AssetsFontsGen();
 
+  /// File path: assets/fonts/gilroy_black.ttf
+  String get gilroyBlack => 'assets/fonts/gilroy_black.ttf';
+
+  /// File path: assets/fonts/gilroy_blackItalic.ttf
+  String get gilroyBlackItalic => 'assets/fonts/gilroy_blackItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_bold.ttf
+  String get gilroyBold => 'assets/fonts/gilroy_bold.ttf';
+
+  /// File path: assets/fonts/gilroy_boldItalic.ttf
+  String get gilroyBoldItalic => 'assets/fonts/gilroy_boldItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_extraBold.ttf
+  String get gilroyExtraBold => 'assets/fonts/gilroy_extraBold.ttf';
+
+  /// File path: assets/fonts/gilroy_extraBoldItalic.ttf
+  String get gilroyExtraBoldItalic => 'assets/fonts/gilroy_extraBoldItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_heavy.ttf
+  String get gilroyHeavy => 'assets/fonts/gilroy_heavy.ttf';
+
+  /// File path: assets/fonts/gilroy_heavyItalic.ttf
+  String get gilroyHeavyItalic => 'assets/fonts/gilroy_heavyItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_light.ttf
+  String get gilroyLight => 'assets/fonts/gilroy_light.ttf';
+
+  /// File path: assets/fonts/gilroy_lightItalic.ttf
+  String get gilroyLightItalic => 'assets/fonts/gilroy_lightItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_medium.ttf
+  String get gilroyMedium => 'assets/fonts/gilroy_medium.ttf';
+
+  /// File path: assets/fonts/gilroy_mediumItalic.ttf
+  String get gilroyMediumItalic => 'assets/fonts/gilroy_mediumItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_regular.ttf
+  String get gilroyRegular => 'assets/fonts/gilroy_regular.ttf';
+
+  /// File path: assets/fonts/gilroy_regularItalic.ttf
+  String get gilroyRegularItalic => 'assets/fonts/gilroy_regularItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_semiBold.ttf
+  String get gilroySemiBold => 'assets/fonts/gilroy_semiBold.ttf';
+
+  /// File path: assets/fonts/gilroy_semiBoldItalic.ttf
+  String get gilroySemiBoldItalic => 'assets/fonts/gilroy_semiBoldItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_thin.ttf
+  String get gilroyThin => 'assets/fonts/gilroy_thin.ttf';
+
+  /// File path: assets/fonts/gilroy_thinItalic.ttf
+  String get gilroyThinItalic => 'assets/fonts/gilroy_thinItalic.ttf';
+
+  /// File path: assets/fonts/gilroy_ultraLight.ttf
+  String get gilroyUltraLight => 'assets/fonts/gilroy_ultraLight.ttf';
+
+  /// File path: assets/fonts/gilroy_ultraLightItalic.ttf
+  String get gilroyUltraLightItalic =>
+      'assets/fonts/gilroy_ultraLightItalic.ttf';
+
   /// File path: assets/fonts/poppins.ttf
   String get poppins => 'assets/fonts/poppins.ttf';
 
@@ -39,6 +100,26 @@ class $AssetsFontsGen {
 
   /// List of all assets
   List<String> get values => [
+    gilroyBlack,
+    gilroyBlackItalic,
+    gilroyBold,
+    gilroyBoldItalic,
+    gilroyExtraBold,
+    gilroyExtraBoldItalic,
+    gilroyHeavy,
+    gilroyHeavyItalic,
+    gilroyLight,
+    gilroyLightItalic,
+    gilroyMedium,
+    gilroyMediumItalic,
+    gilroyRegular,
+    gilroyRegularItalic,
+    gilroySemiBold,
+    gilroySemiBoldItalic,
+    gilroyThin,
+    gilroyThinItalic,
+    gilroyUltraLight,
+    gilroyUltraLightItalic,
     poppins,
     poppinsBold,
     poppinsLight,
@@ -50,188 +131,48 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/allocation.svg
-  String get allocation => 'assets/icons/allocation.svg';
-
-  /// File path: assets/icons/approval.svg
-  String get approval => 'assets/icons/approval.svg';
-
-  /// File path: assets/icons/attendance.svg
-  String get attendance => 'assets/icons/attendance.svg';
-
-  /// File path: assets/icons/camera.svg
-  String get camera => 'assets/icons/camera.svg';
-
-  /// File path: assets/icons/checked_in.svg
-  String get checkedIn => 'assets/icons/checked_in.svg';
-
-  /// File path: assets/icons/checked_out.svg
-  String get checkedOut => 'assets/icons/checked_out.svg';
-
-  /// File path: assets/icons/clock.svg
-  String get clock => 'assets/icons/clock.svg';
-
-  /// File path: assets/icons/distributor.svg
-  String get distributor => 'assets/icons/distributor.svg';
-
-  /// File path: assets/icons/done.svg
-  String get done => 'assets/icons/done.svg';
-
   /// File path: assets/icons/error_image.png
   AssetGenImage get errorImage =>
       const AssetGenImage('assets/icons/error_image.png');
 
-  /// File path: assets/icons/excel.svg
-  String get excel => 'assets/icons/excel.svg';
+  /// File path: assets/icons/explore.svg
+  String get explore => 'assets/icons/explore.svg';
 
-  /// File path: assets/icons/finalize_ref.svg
-  String get finalizeRef => 'assets/icons/finalize_ref.svg';
-
-  /// File path: assets/icons/fingerprint.svg
-  String get fingerprint => 'assets/icons/fingerprint.svg';
+  /// File path: assets/icons/financial_plan.svg
+  String get financialPlan => 'assets/icons/financial_plan.svg';
 
   /// File path: assets/icons/hamburger.svg
   String get hamburger => 'assets/icons/hamburger.svg';
 
-  /// File path: assets/icons/language.svg
-  String get language => 'assets/icons/language.svg';
+  /// File path: assets/icons/home.svg
+  String get home => 'assets/icons/home.svg';
 
-  /// File path: assets/icons/ledger.svg
-  String get ledger => 'assets/icons/ledger.svg';
+  /// File path: assets/icons/lock_key.svg
+  String get lockKey => 'assets/icons/lock_key.svg';
 
-  /// File path: assets/icons/location.svg
-  String get location => 'assets/icons/location.svg';
-
-  /// File path: assets/icons/lock.svg
-  String get lock => 'assets/icons/lock.svg';
-
-  /// File path: assets/icons/logout.svg
-  String get logout => 'assets/icons/logout.svg';
-
-  /// File path: assets/icons/my_profile.svg
-  String get myProfile => 'assets/icons/my_profile.svg';
-
-  /// File path: assets/icons/new_supply.svg
-  String get newSupply => 'assets/icons/new_supply.svg';
-
-  /// File path: assets/icons/notification.svg
-  String get notification => 'assets/icons/notification.svg';
-
-  /// File path: assets/icons/open_sr.svg
-  String get openSr => 'assets/icons/open_sr.svg';
-
-  /// File path: assets/icons/outstanding_bill.svg
-  String get outstandingBill => 'assets/icons/outstanding_bill.svg';
-
-  /// File path: assets/icons/outstandings.svg
-  String get outstandings => 'assets/icons/outstandings.svg';
-
-  /// File path: assets/icons/past.svg
-  String get past => 'assets/icons/past.svg';
-
-  /// File path: assets/icons/past_allocations.svg
-  String get pastAllocations => 'assets/icons/past_allocations.svg';
-
-  /// File path: assets/icons/past_allocations_info.svg
-  String get pastAllocationsInfo => 'assets/icons/past_allocations_info.svg';
-
-  /// File path: assets/icons/payment_links.svg
-  String get paymentLinks => 'assets/icons/payment_links.svg';
-
-  /// File path: assets/icons/pdf.svg
-  String get pdf => 'assets/icons/pdf.svg';
-
-  /// File path: assets/icons/phone_call.svg
-  String get phoneCall => 'assets/icons/phone_call.svg';
-
-  /// File path: assets/icons/recent.svg
-  String get recent => 'assets/icons/recent.svg';
-
-  /// File path: assets/icons/reference.svg
-  String get reference => 'assets/icons/reference.svg';
-
-  /// File path: assets/icons/retailer.svg
-  String get retailer => 'assets/icons/retailer.svg';
-
-  /// File path: assets/icons/search.svg
-  String get search => 'assets/icons/search.svg';
-
-  /// File path: assets/icons/security.svg
-  String get security => 'assets/icons/security.svg';
-
-  /// File path: assets/icons/settings.svg
-  String get settings => 'assets/icons/settings.svg';
-
-  /// File path: assets/icons/share.svg
-  String get share => 'assets/icons/share.svg';
-
-  /// File path: assets/icons/theme.svg
-  String get theme => 'assets/icons/theme.svg';
-
-  /// File path: assets/icons/upload.svg
-  String get upload => 'assets/icons/upload.svg';
-
-  /// File path: assets/icons/vehicle.svg
-  String get vehicle => 'assets/icons/vehicle.svg';
+  /// File path: assets/icons/my_dhan.svg
+  String get myDhan => 'assets/icons/my_dhan.svg';
 
   /// List of all assets
   List<dynamic> get values => [
-    allocation,
-    approval,
-    attendance,
-    camera,
-    checkedIn,
-    checkedOut,
-    clock,
-    distributor,
-    done,
     errorImage,
-    excel,
-    finalizeRef,
-    fingerprint,
+    explore,
+    financialPlan,
     hamburger,
-    language,
-    ledger,
-    location,
-    lock,
-    logout,
-    myProfile,
-    newSupply,
-    notification,
-    openSr,
-    outstandingBill,
-    outstandings,
-    past,
-    pastAllocations,
-    pastAllocationsInfo,
-    paymentLinks,
-    pdf,
-    phoneCall,
-    recent,
-    reference,
-    retailer,
-    search,
-    security,
-    settings,
-    share,
-    theme,
-    upload,
-    vehicle,
+    home,
+    lockKey,
+    myDhan,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/logo.png
-  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
-
-  /// File path: assets/images/sia_inc_logo.png
-  AssetGenImage get siaIncLogo =>
-      const AssetGenImage('assets/images/sia_inc_logo.png');
+  /// File path: assets/images/logo.jpg
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.jpg');
 
   /// List of all assets
-  List<AssetGenImage> get values => [logo, siaIncLogo];
+  List<AssetGenImage> get values => [logo];
 }
 
 class $AssetsLottieGen {

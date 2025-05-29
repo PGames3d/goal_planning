@@ -48,11 +48,8 @@ class _FinancialPlanScreenState extends State<FinancialPlanScreen> {
                             slivers: [
                               CustomSliverAppBar(
                                 scaffoldKey: _scaffoldKey,
-                                title: context.loc.billDetails,
+                                title: context.loc.financialPlan,
                                 isBack: true,
-                                viewBillAction: (){
-
-                                },
                               ),
 
                              

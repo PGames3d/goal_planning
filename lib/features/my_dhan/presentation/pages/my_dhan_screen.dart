@@ -48,11 +48,8 @@ class _MyDhanScreenState extends State<MyDhanScreen> {
                             slivers: [
                               CustomSliverAppBar(
                                 scaffoldKey: _scaffoldKey,
-                                title: context.loc.billDetails,
+                                title: context.loc.myDhan,
                                 isBack: true,
-                                viewBillAction: (){
-
-                                },
                               ),
 
                              

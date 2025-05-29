@@ -49,11 +49,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                             slivers: [
                               CustomSliverAppBar(
                                 scaffoldKey: _scaffoldKey,
-                                title: context.loc.billDetails,
+                                title: context.loc.explore,
                                 isBack: true,
-                                viewBillAction: (){
-
-                                },
                               ),
 
                              

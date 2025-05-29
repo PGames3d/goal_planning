@@ -54,6 +54,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
     BlocProvider(
       create: (context) => ThemeBloc()..add(InitialTheme(context: context)),
 ),
+    BlocProvider(
+      create: (context) => LocaleCubit(),
+    ),
   ],
   child: BlocBuilder<LocaleCubit, Locale>(
     builder: (context, locale) {
@@ -82,7 +85,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
               localizationsDelegates: AppLocalizations.localizationsDelegates,
               supportedLocales: AppLocalizations.supportedLocales,
               title: 'Goal Planning',
-              themeMode: ThemeMode.system,
+              themeMode: ThemeMode.dark,
               theme: selectedTheme,
               darkTheme: darkTheme,
               locale: locale,

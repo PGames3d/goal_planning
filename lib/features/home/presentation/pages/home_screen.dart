@@ -48,11 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             slivers: [
                               CustomSliverAppBar(
                                 scaffoldKey: _scaffoldKey,
-                                title: context.loc.billDetails,
+                                title: context.loc.home,
                                 isBack: true,
-                                viewBillAction: (){
-
-                                },
                               ),
 
 

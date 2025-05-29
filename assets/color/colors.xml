@@ -64,6 +64,12 @@
     <color name="card_surface_red">#FD5B5F</color>
     <color name="card_surface_green">#23B18B</color>
     <color name="ledger_green">#09AC0F</color>
+    <color name="stock_color">#30B0C7</color>
+    <color name="sip_growth_color">#3D54AD</color>
+    <color name="unselected_color">#5D5D5D</color>
+    <color name="empty_progress_bar">#262626</color>
+    <color name="text_color">#D1D1D1</color>
+    <color name="sub_title_color">#888888</color>
 
 
 </resources>

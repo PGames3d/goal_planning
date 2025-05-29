@@ -40,6 +40,9 @@ class ColorName {
   /// Color: #9A8DCB
   static const Color dividerPurpleColor = Color(0xFF9A8DCB);
 
+  /// Color: #262626
+  static const Color emptyProgressBar = Color(0xFF262626);
+
   /// Color: #FFF5F5
   static const Color errorMessageBackgroundColor = Color(0xFFFFF5F5);
 
@@ -100,11 +103,20 @@ class ColorName {
   /// Color: #EE4F4320
   static const Color sidebarBackgroundColor = Color(0xEE4F4320);
 
+  /// Color: #3D54AD
+  static const Color sipGrowthColor = Color(0xFF3D54AD);
+
   /// Color: #F6EEE2
   static const Color skinColor = Color(0xFFF6EEE2);
 
   /// Color: #A1FFF9
   static const Color skyBlue = Color(0xFFA1FFF9);
+
+  /// Color: #30B0C7
+  static const Color stockColor = Color(0xFF30B0C7);
+
+  /// Color: #888888
+  static const Color subTitleColor = Color(0xFF888888);
 
   /// Color: #F5FFFC
   static const Color successMessageBackgroundColor = Color(0xFFF5FFFC);
@@ -121,11 +133,17 @@ class ColorName {
   /// Color: #2F3F52
   static const Color successMessageColor = Color(0xFF2F3F52);
 
+  /// Color: #D1D1D1
+  static const Color textColor = Color(0xFFD1D1D1);
+
   /// Color: #F8FBFC
   static const Color textFieldFilledColor = Color(0xFFF8FBFC);
 
   /// Color: #F8FBFC
   static const Color textfieldBackground = Color(0xFFF8FBFC);
+
+  /// Color: #5D5D5D
+  static const Color unselectedColor = Color(0xFF5D5D5D);
 
   /// Color: #FFFFFF
   static const Color whiteColor = Color(0xFFFFFFFF);

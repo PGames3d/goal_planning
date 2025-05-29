@@ -65,23 +65,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       centerTitle: true, // Center the title
       actions: [
-        ///past allocation
-        if(isPastAction)...[
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 1.0),
-            child: InkWell(
-              onTap: () {
-               ///perform action for past action button
-              },
-              borderRadius: const BorderRadius.all(Radius.circular(30)),
-              child: Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: goalSvg(context, path: Assets.icons.past),
-              ),
-            ),
-          ),],
-
-
         ///right side padding
         const SizedBox(width: UIHelpers.mediumPadding,)
       ],

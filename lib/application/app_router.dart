@@ -1,13 +1,12 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart';
 
 import '../core/data/services/navigation_service.dart';
-import '../core/data/services/theme_service.dart';
 import '../core/utils/auth_guards.dart';
 import '../features/explore/presentation/pages/explore_screen.dart';
 import '../features/financial_plan/presentation/pages/financial_plan_screen.dart';
 import '../features/home/presentation/pages/home_screen.dart';
 import '../features/my_dhan/presentation/pages/my_dhan_screen.dart';
+import '../features/main_navigation/presentation/pages/main_navigation_screen.dart';
 import 'app_routes.dart';
 
 part 'app_router.gr.dart';
@@ -25,6 +24,14 @@ class AppRouter extends RootStackRouter {
         //     // guards: [AuthGuard()],
         //     keepHistory: false,
         //     initial: false),
+
+    AutoRoute(
+      path: AppRoutes.mainNavigationPath,
+      page: MainNavigationScreenRoute.page,
+      guards: [AuthGuard()],
+      initial: true
+    ),
+
     AutoRoute(
         path: AppRoutes.homePath,
         page: HomeScreenRoute.page,

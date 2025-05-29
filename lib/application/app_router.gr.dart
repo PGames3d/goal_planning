@@ -59,6 +59,22 @@ class HomeScreenRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [MainNavigationScreen]
+class MainNavigationScreenRoute extends PageRouteInfo<void> {
+  const MainNavigationScreenRoute({List<PageRouteInfo>? children})
+    : super(MainNavigationScreenRoute.name, initialChildren: children);
+
+  static const String name = 'MainNavigationScreenRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MainNavigationScreen();
+    },
+  );
+}
+
+/// generated route for
 /// [MyDhanScreen]
 class MyDhanScreenRoute extends PageRouteInfo<void> {
   const MyDhanScreenRoute({List<PageRouteInfo>? children})

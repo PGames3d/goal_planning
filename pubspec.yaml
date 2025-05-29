@@ -113,6 +113,29 @@ flutter:
         - asset: assets/fonts/poppins_light.ttf
         - asset: assets/fonts/poppins_medium.ttf
         - asset: assets/fonts/poppins_semibold.ttf
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/gilroy_black.ttf
+        - asset: assets/fonts/gilroy_blackItalic.ttf
+        - asset: assets/fonts/gilroy_bold.ttf
+        - asset: assets/fonts/gilroy_boldItalic.ttf
+        - asset: assets/fonts/gilroy_extraBold.ttf
+        - asset: assets/fonts/gilroy_extraBoldItalic.ttf
+        - asset: assets/fonts/gilroy_heavy.ttf
+        - asset: assets/fonts/gilroy_heavyItalic.ttf
+        - asset: assets/fonts/gilroy_light.ttf
+        - asset: assets/fonts/gilroy_lightItalic.ttf
+        - asset: assets/fonts/gilroy_medium.ttf
+        - asset: assets/fonts/gilroy_mediumItalic.ttf
+        - asset: assets/fonts/gilroy_regularItalic.ttf
+        - asset: assets/fonts/gilroy_regularItalic.ttf
+        - asset: assets/fonts/gilroy_semiBold.ttf
+        - asset: assets/fonts/gilroy_semiBoldItalic.ttf
+        - asset: assets/fonts/gilroy_thin.ttf
+        - asset: assets/fonts/gilroy_thinItalic.ttf
+        - asset: assets/fonts/gilroy_ultraLight.ttf
+        - asset: assets/fonts/gilroy_ultraLightItalic.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_native_splash:

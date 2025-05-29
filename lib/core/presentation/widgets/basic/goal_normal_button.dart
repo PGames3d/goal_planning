@@ -41,7 +41,7 @@ class GoalNormalButton extends StatelessWidget {
           children: [
             if(isIconButton??false)...[
               goalSvg(context,
-                  path:iconPath ?? Assets.icons.phoneCall,
+                  path:iconPath ?? Assets.icons.home,
                   colorFilter:  ColorFilter.mode(
                       iconColor ?? ColorName.whiteColor, BlendMode.srcIn)),
               const SizedBox(

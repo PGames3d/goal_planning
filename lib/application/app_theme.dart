@@ -40,7 +40,7 @@ class AppTheme {
               borderSide: BorderSide(color: lightColorScheme.error, width: 2)),
           outlineBorder: BorderSide(color: lightColorScheme.primary)),
       useMaterial3: true,
-      fontFamily: FontFamily.poppins);
+      fontFamily: FontFamily.gilroy);
 
   static final ThemeData goalDarkTheme = ThemeData(
       brightness: Brightness.dark,
@@ -66,7 +66,7 @@ class AppTheme {
               borderSide: BorderSide(color: darkColorScheme.error, width: 2)),
           outlineBorder: BorderSide(color: darkColorScheme.primary)),
       useMaterial3: true,
-      fontFamily: FontFamily.poppins);
+      fontFamily: FontFamily.gilroy);
 
   static final ThemeData goalYellowTheme = ThemeData(
       scaffoldBackgroundColor: ColorName.whiteColor,
@@ -101,7 +101,7 @@ class AppTheme {
               borderSide: BorderSide(color: lightColorScheme.error, width: 2)),
           outlineBorder: BorderSide(color: lightColorScheme.primary)),
       useMaterial3: true,
-      fontFamily: FontFamily.poppins);
+      fontFamily: FontFamily.gilroy);
 
 
 
@@ -193,7 +193,7 @@ surfaceContainerHighest: Color(0xffe9e2d1),
 
 const darkColorScheme = ColorScheme(
   brightness: Brightness.dark,
-  primary: Color(0xFF8ECDFF),
+  primary: Color(0xFFAF52DE),
   onPrimary: Color(0xFF00344F),
   primaryContainer: Color(0xFF004B71),
   onPrimaryContainer: Color(0xFFCBE6FF),

@@ -33,68 +33,24 @@ Widget goalSvg(BuildContext context, {
       fit: boxFit ?? BoxFit.none,
     );
   }else{
-    if (defaultTargetPlatform == TargetPlatform.android) {
-      // Recreate AndroidView when theme color changes
-      final viewKey = ValueKey("$path-${filterColor.value}");
-      return SizedBox(
-        height: height ?? 24,
-        width: width ?? 24,
-        child: AbsorbPointer(
-          child: AndroidView(
-            key: viewKey,
-            viewType: 'vector_view',
-            creationParams: {
-              'drawable': _extractFileName(path),
-              'color': _colorToHex(filterColor),
-              'width': width ?? 24,
-              'height': height ?? 24,
-            },
-            creationParamsCodec: const StandardMessageCodec(),
-          ),
-        ),
-      );
-    }
-
-
     // if (defaultTargetPlatform == TargetPlatform.android) {
-    //   const viewType = 'vector_view';
-    //   final keySuffix = '${path}_${filterColor.value}_${width}_$height';
-    //   final viewKey = ValueKey('vector_view_$keySuffix');
-    //   final surfaceKey = ValueKey('surface_vector_view_$keySuffix');
-    //
+    //   // Recreate AndroidView when theme color changes
+    //   final viewKey = ValueKey("$path-${filterColor.value}");
     //   return SizedBox(
     //     height: height ?? 24,
     //     width: width ?? 24,
-    //     child: PlatformViewLink(
-    //       key: viewKey,
-    //       viewType: viewType,
-    //       surfaceFactory: (context, controller) {
-    //         return PlatformViewSurface(
-    //           key: surfaceKey,
-    //           controller: controller,
-    //           hitTestBehavior: PlatformViewHitTestBehavior.transparent,
-    //           gestureRecognizers:  <Factory<OneSequenceGestureRecognizer>>{
-    //             Factory<EagerGestureRecognizer>(() => EagerGestureRecognizer()),
-    //           },
-    //         );
-    //       },
-    //       onCreatePlatformView: (params) {
-    //         final controller = PlatformViewsService.initSurfaceAndroidView(
-    //           id: params.id,
-    //           viewType: viewType,
-    //           layoutDirection: TextDirection.ltr,
-    //           creationParams: {
-    //             'drawable': _extractFileName(path),
-    //             'color': _colorToHex(filterColor),
-    //             'width': width ?? 24,
-    //             'height': height ?? 24,
-    //           },
-    //           creationParamsCodec: const StandardMessageCodec(),
-    //         );
-    //         controller.addOnPlatformViewCreatedListener(params.onPlatformViewCreated);
-    //         controller.create();
-    //         return controller;
-    //       },
+    //     child: AbsorbPointer(
+    //       child: AndroidView(
+    //         key: viewKey,
+    //         viewType: 'vector_view',
+    //         creationParams: {
+    //           'drawable': _extractFileName(path),
+    //           'color': _colorToHex(filterColor),
+    //           'width': width ?? 24,
+    //           'height': height ?? 24,
+    //         },
+    //         creationParamsCodec: const StandardMessageCodec(),
+    //       ),
     //     ),
     //   );
     // }

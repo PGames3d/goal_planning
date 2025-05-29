@@ -15,7 +15,7 @@ class GoalPermissionWidget extends StatelessWidget {
       height: 300,
       child: Center(
         child: GoalText(
-          context.loc.permissionMessage,
+          context.loc.seeHowInvest,
           style: Theme.of(context)
               .textTheme
               .titleMedium

@@ -10,6 +10,9 @@
 class FontFamily {
   FontFamily._();
 
+  /// Font family: Gilroy
+  static const String gilroy = 'Gilroy';
+
   /// Font family: Poppins
   static const String poppins = 'Poppins';
 }
