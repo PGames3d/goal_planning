@@ -17,33 +17,38 @@ samples, guidance on mobile development, and a full API reference.
 
 Using Flutter SDK 3.32.0
 
+Design - https://www.figma.com/design/TMBe07zbdSLcb41IN25lja/New-Task-File?node-id=1-138&t=UsVKbhrURtgdyLqN-0
+Used API's : https://api.mfapi.in/mf
+            https://indianapi.in/indian-stock-market
+
+
 
 Clean Architecture (Feature First) Structure
 features/
 └── login/
-├── data/
-│   ├── datasources/
-│   │   └── login_remote_data_source.dart
-│   ├── models/
-│   │   └── login_request_model.dart
-│   └── repositories/
-│       └── login_repository_impl.dart
-├── domain/
-│   ├── entities/
-│   │   └── user.dart
-│   ├── repositories/
-│   │   └── login_repository.dart
-│   └── usecases/
-│       └── login_user.dart
-├── presentation/
-│   ├── bloc/
-│   │   ├── login_bloc.dart
-│   │   └── login_event.dart
-│   ├── pages/
-│   │   └── login_page.dart
-│   └── widgets/
-│       └── login_form.dart
-└── login_feature.dart
+    ├── data/
+    │   ├── datasources/
+    │   │   └── login_remote_data_source.dart
+    │   ├── models/
+    │   │   └── login_request_model.dart
+    │   └── repositories/
+    │       └── login_repository_impl.dart
+    ├── domain/
+    │   ├── entities/
+    │   │   └── user.dart
+    │   ├── repositories/
+    │   │   └── login_repository.dart
+    │   └── usecases/
+    │       └── login_user.dart
+    ├── presentation/
+    │   ├── bloc/
+    │   │   ├── login_bloc.dart
+    │   │   └── login_event.dart
+    │   ├── pages/
+    │   │   └── login_page.dart
+    │   └── widgets/
+    │       └── login_form.dart
+    └── login_feature.dart
 
 
 library login_feature;

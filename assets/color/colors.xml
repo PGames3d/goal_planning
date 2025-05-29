@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color_light">#275BC4</color>
+    <color name="primary_color_dark">#275BC4</color>
+    <color name="text_field_filled_color">#F8FBFC</color>
+    <color name="white_color">#FFFFFF</color> <!-- appbarbackgroundcolor -->
+    <color name="black_color">#000000</color>
+    <!--    <color name="light_grey">#CBD3DA</color>-->
+    <!--    <color name="blueDefault_color">#FF006494</color> &lt;!&ndash; default blue color Color&ndash;&gt;-->
+    <color name="grey_color">#939393</color> <!-- grey Color-->
+    <!--    <color name="amber_color">#FFBF00</color> &lt;!&ndash; amber Color&ndash;&gt;-->
+    <!--    <color name="orange_color">#fd7e14</color> &lt;!&ndash; orange Color&ndash;&gt;-->
+    <!--    <color name="purple_color">#6f42c1</color> &lt;!&ndash; purple Color&ndash;&gt;-->
+    <!--    <color name="blue_color">#007bff</color> &lt;!&ndash; blue Color&ndash;&gt;-->
+    <!--    <color name="green_color">#28a745</color> &lt;!&ndash; green Color&ndash;&gt;-->
+    <!--    <color name="yellow_color">#ffc107</color> &lt;!&ndash; yellow Color&ndash;&gt;-->
+    <color name="red_color">#dc3545</color> <!-- red Color-->
+    <!--    <color name="green_accent_color">#20c997</color> &lt;!&ndash; light green Color&ndash;&gt;-->
+    <!--    <color name="pink_color">#e83e8c</color> &lt;!&ndash; pink Color&ndash;&gt;-->
+    <!--    <color name="transparent_color">#00FFFFFF</color> &lt;!&ndash; transparent Color&ndash;&gt;-->
+    <color name="success_message_background_color">#F5FFFC</color>
+    <color name="success_message_color">#2F3F52</color>
+    <color name="success_message_border_color">#29CC97</color>
+    <color name="success_message_box_shadow_color">#BEC8D1</color>
+    <color name="success_message_close_icon_color">#6C7986</color>
+    <color name="error_message_background_color">#FFF5F5</color>
+    <color name="error_message_border_color">#EB5757</color>
+    <!--    <color name="info_message_background_color">#d9edf7</color>-->
+    <!--    <color name="info_message_border_color">#bce8f1</color>-->
+    <!--    <color name="appointment_indication_color">#3366ff</color>-->
+    <!--    <color name="event_indication_color">#5bbf2a</color>-->
+    <!--    <color name="packages_indication_color">#ffcd1c</color>-->
+    <!--    <color name="class_indication_color">#ff6f91</color>-->
+    <!--    <color name="contracts_indication_color">#f24d1a</color>-->
+    <!--    <color name="program_indication_color">#53D1AA</color>-->
+    <color name="expansion_list_border_grey_color">#868686</color> <!-- dropdown grey Color-->
+    <color name="grey_button_color">#C0C0C0</color> <!-- profile grey button color-->
+    <color name="light_green_button_color">#B4CE53</color> <!-- profile lightGreen button color-->
+    <color name="light_orange_stepper_color">#FF9900</color> <!-- profile lightGreen stepper color-->
+    <color name="appbar_deep_green_color">#1C2F13</color> <!-- appbar Deep Green color-->
+    <color name="divider_purple_color">#9A8DCB</color> <!-- Divider Purple color-->
+    <color name="red_toggle_button">#EE4F43</color> <!-- Red Toggle Button color for opportunities-->
+    <color name="skin_color">#F6EEE2</color> <!-- skin color for selected values-->
+
+
+<!--     calendar   event colors declared here-->
+    <color name="pink_color">#FDA1FF</color> <!-- pink color event-->
+    <color name="sky_blue">#A1FFF9</color> <!-- sky blue color event-->
+    <color name="light_cream_blue">#A1C1FF</color> <!-- light cream blue color event-->
+    <color name="skin_color">#FFD4A1</color> <!-- Skin color event-->
+
+    <color name="profile_view_deep_brown">#B56C00</color> <!-- profile view container border color-->
+    <color name="clickable_color">#949F14</color> <!-- click color-->
+    <color name="sidebar_background_color">#EE4F4320</color> <!-- sidebar icon background color-->
+
+    <color name="related_interested_location_background">#1C2F13</color> <!-- click color-->
+    <color name="related_interested_text">#4E4E4E</color> <!-- click color-->
+    <color name="focused_border_color">#275BC480</color>
+    <color name="border_color">#3838380D</color>
+    <color name="textfield_background">#F8FBFC</color>
+    <color name="light_grey">#767676</color>
+    <color name="card_background_1">#F8FBFC</color>
+    <color name="card_background_2">#FD8082</color>
+    <color name="card_surface_red">#FD5B5F</color>
+    <color name="card_surface_green">#23B18B</color>
+    <color name="ledger_green">#09AC0F</color>
+
+
+</resources>
