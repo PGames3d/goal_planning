@@ -52,11 +52,9 @@
     <color name="profile_view_deep_brown">#B56C00</color> <!-- profile view container border color-->
     <color name="clickable_color">#949F14</color> <!-- click color-->
     <color name="sidebar_background_color">#EE4F4320</color> <!-- sidebar icon background color-->
-
+    <color name="focused_border_color">#275BC480</color>
     <color name="related_interested_location_background">#1C2F13</color> <!-- click color-->
     <color name="related_interested_text">#4E4E4E</color> <!-- click color-->
-    <color name="focused_border_color">#275BC480</color>
-    <color name="border_color">#3838380D</color>
     <color name="textfield_background">#F8FBFC</color>
     <color name="light_grey">#767676</color>
     <color name="card_background_1">#F8FBFC</color>
@@ -70,6 +68,9 @@
     <color name="empty_progress_bar">#262626</color>
     <color name="text_color">#D1D1D1</color>
     <color name="sub_title_color">#888888</color>
+    <color name="border_color">#3D3D3D</color>
+    <color name="container_background">#1A1919</color>
+    <color name="goal_year_range">#F6F6F6</color>
 
 
 </resources>

@@ -40,7 +40,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
         NavigationService.pop(context);
       },
           borderRadius: const BorderRadius.all(Radius.circular(30)),
-          child: Icon(Platform.isAndroid ? Icons.arrow_back_rounded : Icons.arrow_back_ios_new_rounded, color: ColorName.whiteColor,) )
+          child: Icon(Platform.isAndroid ? Icons.arrow_back_rounded : Icons.arrow_back_ios_new_rounded, color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black) )
           :
       ///use for open drawer
       InkWell(
@@ -62,7 +62,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
           Flexible(
             child: GoalText(
               title,
-              style: titleStyle ?? Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w400,fontSize: 18,height: 22,), // Custom text style
+              style: titleStyle ?? Theme.of(context).textTheme.titleMedium?.copyWith( fontWeight: FontWeight.w400,fontSize: 18,height: 22,), // Custom text style
             ),
           ),
         ],

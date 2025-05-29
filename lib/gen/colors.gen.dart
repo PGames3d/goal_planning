@@ -19,8 +19,8 @@ class ColorName {
   /// Color: #000000
   static const Color blackColor = Color(0xFF000000);
 
-  /// Color: #3838380D
-  static const Color borderColor = Color(0x3838380D);
+  /// Color: #3D3D3D
+  static const Color borderColor = Color(0xFF3D3D3D);
 
   /// Color: #F8FBFC
   static const Color cardBackground1 = Color(0xFFF8FBFC);
@@ -36,6 +36,9 @@ class ColorName {
 
   /// Color: #949F14
   static const Color clickableColor = Color(0xFF949F14);
+
+  /// Color: #1A1919
+  static const Color containerBackground = Color(0xFF1A1919);
 
   /// Color: #9A8DCB
   static const Color dividerPurpleColor = Color(0xFF9A8DCB);
@@ -54,6 +57,9 @@ class ColorName {
 
   /// Color: #275BC480
   static const Color focusedBorderColor = Color(0x275BC480);
+
+  /// Color: #F6F6F6
+  static const Color goalYearRange = Color(0xFFF6F6F6);
 
   /// Color: #C0C0C0
   static const Color greyButtonColor = Color(0xFFC0C0C0);

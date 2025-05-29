@@ -131,6 +131,9 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/equal.svg
+  String get equal => 'assets/icons/equal.svg';
+
   /// File path: assets/icons/error_image.png
   AssetGenImage get errorImage =>
       const AssetGenImage('assets/icons/error_image.png');
@@ -150,18 +153,27 @@ class $AssetsIconsGen {
   /// File path: assets/icons/lock_key.svg
   String get lockKey => 'assets/icons/lock_key.svg';
 
+  /// File path: assets/icons/minus.svg
+  String get minus => 'assets/icons/minus.svg';
+
   /// File path: assets/icons/my_dhan.svg
   String get myDhan => 'assets/icons/my_dhan.svg';
 
+  /// File path: assets/icons/right_arrow.svg
+  String get rightArrow => 'assets/icons/right_arrow.svg';
+
   /// List of all assets
   List<dynamic> get values => [
+    equal,
     errorImage,
     explore,
     financialPlan,
     hamburger,
     home,
     lockKey,
+    minus,
     myDhan,
+    rightArrow,
   ];
 }
 

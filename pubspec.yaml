@@ -113,30 +113,70 @@ flutter:
         - asset: assets/fonts/poppins_light.ttf
         - asset: assets/fonts/poppins_medium.ttf
         - asset: assets/fonts/poppins_semibold.ttf
+
     - family: Gilroy
       fonts:
         - asset: assets/fonts/gilroy_black.ttf
+          weight: 900
         - asset: assets/fonts/gilroy_blackItalic.ttf
-        - asset: assets/fonts/gilroy_bold.ttf
-        - asset: assets/fonts/gilroy_boldItalic.ttf
-        - asset: assets/fonts/gilroy_extraBold.ttf
-        - asset: assets/fonts/gilroy_extraBoldItalic.ttf
-        - asset: assets/fonts/gilroy_heavy.ttf
-        - asset: assets/fonts/gilroy_heavyItalic.ttf
-        - asset: assets/fonts/gilroy_light.ttf
-        - asset: assets/fonts/gilroy_lightItalic.ttf
-        - asset: assets/fonts/gilroy_medium.ttf
-        - asset: assets/fonts/gilroy_mediumItalic.ttf
-        - asset: assets/fonts/gilroy_regularItalic.ttf
-        - asset: assets/fonts/gilroy_regularItalic.ttf
-        - asset: assets/fonts/gilroy_semiBold.ttf
-        - asset: assets/fonts/gilroy_semiBoldItalic.ttf
-        - asset: assets/fonts/gilroy_thin.ttf
-        - asset: assets/fonts/gilroy_thinItalic.ttf
-        - asset: assets/fonts/gilroy_ultraLight.ttf
-        - asset: assets/fonts/gilroy_ultraLightItalic.ttf
+          weight: 900
+          style: italic
 
-  # For details regarding fonts from package dependencies,
+        - asset: assets/fonts/gilroy_bold.ttf
+          weight: 700
+        - asset: assets/fonts/gilroy_boldItalic.ttf
+          weight: 700
+          style: italic
+
+        - asset: assets/fonts/gilroy_extraBold.ttf
+          weight: 800
+        - asset: assets/fonts/gilroy_extraBoldItalic.ttf
+          weight: 800
+          style: italic
+
+        - asset: assets/fonts/gilroy_heavy.ttf
+          weight: 800
+        - asset: assets/fonts/gilroy_heavyItalic.ttf
+          weight: 800
+          style: italic
+
+        - asset: assets/fonts/gilroy_light.ttf
+          weight: 300
+        - asset: assets/fonts/gilroy_lightItalic.ttf
+          weight: 300
+          style: italic
+
+        - asset: assets/fonts/gilroy_medium.ttf
+          weight: 500
+        - asset: assets/fonts/gilroy_mediumItalic.ttf
+          weight: 500
+          style: italic
+
+        - asset: assets/fonts/gilroy_regular.ttf
+          weight: 400
+        - asset: assets/fonts/gilroy_regularItalic.ttf
+          weight: 400
+          style: italic
+
+        - asset: assets/fonts/gilroy_semiBold.ttf
+          weight: 600
+        - asset: assets/fonts/gilroy_semiBoldItalic.ttf
+          weight: 600
+          style: italic
+
+        - asset: assets/fonts/gilroy_thin.ttf
+          weight: 100
+        - asset: assets/fonts/gilroy_thinItalic.ttf
+          weight: 100
+          style: italic
+
+        - asset: assets/fonts/gilroy_ultraLight.ttf
+          weight: 200
+        - asset: assets/fonts/gilroy_ultraLightItalic.ttf
+          weight: 200
+          style: italic
+
+    # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 flutter_native_splash:
   color: "#ffffff"  # Background color (change as needed)
