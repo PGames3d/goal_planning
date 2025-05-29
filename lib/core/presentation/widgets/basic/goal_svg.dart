@@ -16,14 +16,15 @@ Widget goalSvg(BuildContext context, {
   bool? isWithoutFilter,
 }) {
   // Get the theme's brightness
-  var themeBrightness = Theme.of(context).brightness;
+  var theme = Theme.of(context);
+  var themeBrightness = theme.brightness;
 
   // If the item is selected, decide color based on theme brightness
   Color filterColor = (isSelected ?? false)
       ? (themeBrightness == Brightness.dark
-      ? ColorName.whiteColor
-      : Theme.of(context).colorScheme.primary)
-      : ColorName.lightGrey;
+      ? theme.colorScheme.primary
+      : theme.colorScheme.primary)
+      : ColorName.unselectedColor;
 
   if(isWithoutFilter ?? false){
     return SvgPicture.asset(

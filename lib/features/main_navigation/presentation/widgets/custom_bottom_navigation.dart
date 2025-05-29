@@ -25,8 +25,8 @@ class CustomBottomNavigation extends StatelessWidget {
       child: BottomNavigationBar(
         items: items,
         backgroundColor: Theme.of(context).cardColor,
-        selectedItemColor: CommonUtils.getTextColor(context)  ,
-        unselectedItemColor: ColorName.lightGrey,
+        selectedItemColor: Theme.of(context).colorScheme.primary ,
+        unselectedItemColor: ColorName.unselectedColor,
         elevation: 160,
         currentIndex: index,
         showUnselectedLabels: true,

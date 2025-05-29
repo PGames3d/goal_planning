@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:goal_planning/gen/fonts.gen.dart';
 
 
 import '../../../../gen/assets.gen.dart';
@@ -39,7 +40,7 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
         NavigationService.pop(context);
       },
           borderRadius: const BorderRadius.all(Radius.circular(30)),
-          child: Icon(Platform.isAndroid ? Icons.arrow_back_rounded : Icons.arrow_back_ios_new_rounded, color: ColorName.greyColor,) )
+          child: Icon(Platform.isAndroid ? Icons.arrow_back_rounded : Icons.arrow_back_ios_new_rounded, color: ColorName.whiteColor,) )
           :
       ///use for open drawer
       InkWell(
@@ -55,13 +56,13 @@ class CustomSliverAppBar extends StatelessWidget implements PreferredSizeWidget 
         ),
       ),
       title: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(
             child: GoalText(
               title,
-              style: titleStyle ?? Theme.of(context).textTheme.titleSmall, // Custom text style
+              style: titleStyle ?? Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w400,fontSize: 18,height: 22,), // Custom text style
             ),
           ),
         ],

@@ -111,7 +111,7 @@ class AppTheme {
 /// https://m3.material.io/theme-builder#/custom
 const lightColorScheme = ColorScheme(
   brightness: Brightness.light,
-  primary: ColorName.primaryColorDark,
+  primary: Color(0xFFAF52DE),
   onPrimary: Color(0xFFFFFFFF),
   primaryContainer: Color(0xFFCBE6FF),
   onPrimaryContainer: Color(0xFF001E30),
